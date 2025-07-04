@@ -1,6 +1,7 @@
 Next Release
 -
 
+v1.0.0
 * Write to file functionality added
   * Writes to file when:
     * Creating new Product
