@@ -31,3 +31,15 @@ func WriteToFile() {
 
 	fmt.Println("Successfully wrote to file", FilePath)
 }
+
+func ReadFromFile() {
+	jsonData, err := os.ReadFile(FilePath)
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+	}
+	err = json.Unmarshal(jsonData, &Products)
+	if err != nil {
+		fmt.Println("Error unmarshalling JSON:", err)
+	}
+	fmt.Println("Successfully read from file", FilePath)
+}

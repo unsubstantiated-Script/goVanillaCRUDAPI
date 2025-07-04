@@ -5,10 +5,14 @@ import (
 	"log"
 	"net/http"
 	"vanillaCRUDAPI/handlers"
+	"vanillaCRUDAPI/storage"
 )
 
 func main() {
 	mux := http.NewServeMux()
+
+	//Read in any prior data when program first starts
+	storage.ReadFromFile()
 
 	mux.HandleFunc("/products", handlers.ProductsHandler)
 	mux.HandleFunc("/product/{id}", handlers.ProductHandler)
