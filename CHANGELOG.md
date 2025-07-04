@@ -1,5 +1,7 @@
 Next Release
 -
+
+v0.2.0
 * Product route with handlers
   * GET -> gets a single product via ID
   * PUT -> updates a single product via ID
