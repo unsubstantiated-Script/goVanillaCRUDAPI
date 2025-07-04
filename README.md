@@ -33,7 +33,7 @@ Routes/Methods supported:
 - `/products`
     - `GET`
     - `POST`
-- `/product`
+- `/product/{id}`
     - `GET`
     - `PUT`
     - `DELETE`
