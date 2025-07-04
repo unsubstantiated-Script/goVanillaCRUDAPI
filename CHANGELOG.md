@@ -1,5 +1,8 @@
 Next Release
 -
+v1.1.0
+* Read from file functionality added
+  * Reads long-term file storage into in-Ram memory
 
 v1.0.0
 * Write to file functionality added
