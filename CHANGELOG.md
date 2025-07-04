@@ -1,6 +1,14 @@
 Next Release
 -
 
+v1.0.0
+* Write to file functionality added
+  * Writes to file when:
+    * Creating new Product
+    * Updating Product
+    * Deleting Product
+* Storge items and handlers moved to their respective directories
+
 v0.2.0
 * Product route with handlers
   * GET -> gets a single product via ID
