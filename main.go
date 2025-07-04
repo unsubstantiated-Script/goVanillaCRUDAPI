@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"vanillaCRUDAPI/handlers"
 )
 
 func main() {
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("/products", ProductsHandler)
-	mux.HandleFunc("/product/{id}", ProductHandler)
+	mux.HandleFunc("/products", handlers.ProductsHandler)
+	mux.HandleFunc("/product/{id}", handlers.ProductHandler)
 
 	log.Printf("Starting server on port %d", 8080)
 
